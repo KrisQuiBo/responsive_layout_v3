@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <title>Responsive Layout</title>
   </head>
-  <body>
+  <body><!--header nav-->
     <div class="container clearfix" id="top">
     <h1 class="name">Student Name</h1>
     <nav class="topNav">
@@ -20,28 +20,30 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <header class="intro">
+    <header class="intro"><!--banner-->
       <img src="images/responsive-layout-profile.png" alt="Icon of me." width="367" height="225">
       <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and I'm excited to put all my skills to use!</p>
-
   </header>
 </div>
-  <main class="container clearfix">
-    <h2 id="portfolio">Portfolio</h2>
-    <ul class="portfolio clearfix">
-      <li class="left"><img src="images/portfolio-1.png" alt="Icon of marketing page" width="300"><h3>Marketing Page</h3><p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p></li>
+  <main class="container clearfix"><!--portfolio-->
+
+    <div class="portfolio">
+      <h2 id="portfolio">Portfolio</h2>
+    <ul>
+      <li><img src="images/portfolio-1.png" alt="Icon of marketing page" width="300"><h3>Marketing Page</h3><p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p></li>
       <li><img src="images/portfolio-2.png" alt="Icon of search page" width="300"><h3>Search Page</h3><p>This project searches through a specific database to find information that the user is trying to look up.</p></li>
-      <li class="left"><img src="images/portfolio-3.png" alt="Icon of Travel app" width="300"><h3>Travel App</h3><p>This project compares travel times based on different transportation methods and tells you the best one.</p></li>
+      <li><img src="images/portfolio-3.png" alt="Icon of Travel app" width="300"><h3>Travel App</h3><p>This project compares travel times based on different transportation methods and tells you the best one.</p></li>
       <li><img src="images/portfolio-4.png" alt="Icon of msp of favorite spots" width="300"><h3>Map of Favorite Spots</h3><p>This project uses mapping apps to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p></li>
-      <li class="left"><img src="images/portfolio-5.png" alt="Icon of marketing page" width="300"><h3>Photo Gallery</h3><p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p></li>
+      <li><img src="images/portfolio-5.png" alt="Icon of marketing page" width="300"><h3>Photo Gallery</h3><p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p></li>
       <li><img src="images/portfolio-6.png" alt="Icon of marketing page" width="300"><h3>Calculator</h3><p>Someone can enter in the numbers they want, and press the big blue button and get the results.</p></li>
     </ul>
+  </div>
     <div class="skills">
       <h2 id="skills">Skills</h2>
       <p>Skills? I'd like one of each! According to <a class="inPara" href="https://www.etymonline.com/word/skill">Etymonline </a> the word was born to describe "power of discernment," from Old Norse skil "distinction, ability to make out, discernment, adjustment," related to skilja (v.) "to separate; discern, understand," from Proto-Germanic *skaljo- "divide, separate" (source also of Swedish skäl "reason," Danish skjel "a separation, boundary, limit," Middle Low German schillen "to differ," Middle Low German, Middle Dutch schele "separation, discrimination;" from PIE root *skel- (1) "to cut." Sense of "ability, cleverness" first recorded early 13c.</p>
     </div>
   </main>
-  <footer>
+  <footer><!--footer-->
     <h2 id="contact">Contact</h2>
     <p class="footerPara">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
     <p>Phone <span class="contact">+1 &lpar;111&rpar; 555-1234</span></p>

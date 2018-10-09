@@ -14,9 +14,10 @@ body {
   background: #fff8f2;
 }
 .container {
-  width: 100%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 10px auto;
 }
+
 h1 {
   font-size: 1.1em;
   font-weight: 800;
@@ -59,6 +60,7 @@ a.inPara {
   color: tomato;
   font-size: 1em;
   line-height: 1.8em;
+  padding: 0;
 
 }
 
@@ -79,18 +81,20 @@ p {
 
 .intro img {
   margin: 20px 0;
-
+  border-radius: 60px;
 }
+
 main {
   clear: both;
 }
+
 .portfolio li {
   padding-top: 20px;
   padding-bottom: 30px;
 }
+
 .skills {
   padding-bottom: 40px;
-
 }
 
 footer {
@@ -100,13 +104,16 @@ footer {
   border-bottom: 2px solid #ddd;
   background-color: white;
 }
+
 .footerPara {
   padding-bottom: 30px;
 }
+
 .contact {
   padding-left: 30px;
   font-weight: 800;
 }
+
 .footer {
   width: 100%;
   padding-top: 50px
@@ -127,35 +134,34 @@ footer a {
 ==================================== */
 @media (min-width: 768px) and (max-width: 1023px) {
 
-  .left {
+.portfolio li:nth-child(odd) {
     float: left;
     width: 50%;
     margin-right: 10px;
   }
-
 }
 @media (min-width: 1024px) {
 
-  nav {
-    float: right;
-    /* display: flex; */
-    /* justify-content: space-around; */
-    font-weight: 600;
-    padding: 0;
-    min-height: 30px;
-    border-bottom: 8px solid #f2f7ff;
+    nav {
+      float: right;
+      /* display: flex; */
+      /* justify-content: space-around; */
+      font-weight: 600;
+      padding: 0;
+      min-height: 30px;
+      border-bottom: 8px solid #f2f7ff;
   }
-  .topNav li {
-    margin-right: 10px;
-    display: inline-block;
-}
-.name {
-    margin-top: 10px;
-    font-size: 1.2em;
-    font-weight: 700;
-    color: black;
-    float: left;
-}
+    .topNav li {
+      margin-right: 10px;
+      display: inline-block;
+    }
+    .name {
+        margin-top: 10px;
+        font-size: 1.2em;
+        font-weight: 700;
+        color: black;
+        float: left;
+    }
     .intro {
       margin-top: 40px;
       margin-bottom: 20px;
@@ -170,27 +176,48 @@ footer a {
         text-align: left;
         margin-right: 1em;
     }
+
     .intro img {
       float: right;
       display: inline-block;
       margin: 0;
     }
+    ul.portfolio  {
+      padding: 0;
+    }
+  .portfolio li {
+      width: 30%;
+      padding: 10px;
+      display: inline-block;
+    }
+
     /* .portfolio {
       width: 80%;
       margin: 0 auto;
       padding: 5px;
     } */
+    /* ul.portfolio {
+      width: 80%;
+      margin: 0 auto;
+    }
 
     ul.portfolio li {
       width: 28%;
       float: left;
-      /* padding: 10px; */
+      padding: 0;
+      margin: 0;
+      display: block;
+    }
+
+    ul.portfolio img {
+      display: block;
+      padding: 10px;
     }
 
     .left {
       float: left;
       margin-right: 10px;
-    }
+    } */
 
     .clearfix::after {
         content: "";
