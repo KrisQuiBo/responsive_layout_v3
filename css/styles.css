@@ -14,7 +14,7 @@ body {
   background: #fff8f2;
 }
 .container {
-  width: 80%;
+  width: 90%;
   margin: 10px auto;
 }
 
@@ -28,12 +28,11 @@ h2 {
   font-size: 1.7em;
   text-transform: uppercase;
   letter-spacing: .3em;
-
 }
 
               /*---Link Styles---*/
 nav {
-  background-color: rgba(255,255,255, .3);
+  background-color: rgba(255,255,255, .5);
 }
 ul {
   list-style: none;
@@ -42,17 +41,19 @@ ul {
 }
 a {
   text-decoration: none;
+  text-align: center;
   display: block;
-  padding: 10px;
+  padding: 15px;
   color: #777;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: bolder;
   text-transform: uppercase;
+  border-bottom: .3px solid #ccc;
 
 }
 a:hover {
   color: #ff7b00;
-  background-color: rgba(255,255,255,.7);
+  background-color: rgba(255,255,255,.9);
 
 }
 a.inPara {
@@ -62,34 +63,47 @@ a.inPara {
   font-size: 1em;
   line-height: 1.8em;
   padding: 0;
-
+  border: hidden;
+}
+a.inPara:hover {
+  color: #6DB8FF;
 }
 
           /*---Section Styles---*/
 
+.name {
+  padding-bottom: 10px;
+}
 .intro {
   display: inline-block;
+  padding-top: 20px;
 }
 p {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   color: #999;
   font-size: 1em;
   line-height: 1.8em;
+  padding-top: 10px;
+  padding-bottom: 25px;
 }
 
 .intro img {
-  margin: 20px 0;
-  border-radius: 60px;
+  border-radius: 40px;
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 85%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 main {
   clear: both;
 }
-
+.portfolio {
+  padding-top: 20px;
+}
 .portfolio li {
   padding-top: 20px;
   padding-bottom: 30px;
@@ -105,7 +119,6 @@ main {
 
 footer {
   width: 100%;
-  min-height: 30px;
   padding: 20px 8px 40px 8px;
   border-bottom: 2px solid #ddd;
   background-color: white;
@@ -113,6 +126,13 @@ footer {
 
 .footerPara {
   padding-bottom: 30px;
+}
+.contact a {
+  border: hidden;
+  display: inline;
+}
+.contact a:hover {
+  color: #6DBAFF;
 }
 
 .contact {
@@ -127,25 +147,91 @@ footer {
 }
 footer h4 {
   margin: 0;
+  font-size: 1.2em;
   float: left;
 }
-footer a {
+.backTop {
   float: right;
   margin: 0;
   padding: 0;
-
+  border: hidden;
 }
+footer nav {
+  visibility: hidden;
+}
+
 /* =================================
   Media Queries
 ==================================== */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) {
+    /*---navigationAndHeader---*/
 
-.portfolio li:nth-child(odd) {
+  nav {
+    float: right;
+    font-weight: 600;
+    padding: 0;
+    border-bottom: 8px solid #f2f7ff;
+    }
+  .topNav li, .bottomNav li {
+    margin-right: 7px;
+    display: inline-block;
+    }
+
+  nav a {
+    border-bottom: hidden;
+    }
+  .name {
+    margin-top: 10px;
+    font-size: 1.7em;
+    font-weight: 700;
+    color: black;
     float: left;
-    width: 50%;
-    margin-right: 10px;
+    }
+    /*---banner---*/
+  .intro {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    }
+  .intro p {
+    float: left;
+    line-height: 1.5;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 1.2em;
+    width: 40%;
+    text-align: left;
+    margin-right: 1em;
+    }
+  .intro img {
+    float: right;
+    margin: 0;
+    width: auto;
+    height: auto;
+    }
+  .portfolio li {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
   }
-  footer a {
+
+      /*--footer--*/
+
+  footer {
+    padding: 20px 8px 10px 8px;
+    border-bottom: 2px solid #ddd;
+    background-color: white;
+    overflow: hidden;
+  }
+  footer nav {
+    visibility: visible;
+    border-bottom: hidden;
+  }
+  footer h4 {
+    font-size: 1.5em;
+    padding: 15px;
+  }
+  .backTop {
       display: none;
     }
 }
@@ -158,13 +244,16 @@ footer a {
       min-height: 30px;
       border-bottom: 8px solid #f2f7ff;
   }
-    .topNav li {
+    .topNav li, .bottomNav li {
       margin-right: 10px;
       display: inline-block;
     }
+    nav a {
+      border-bottom: hidden;
+    }
     .name {
         margin-top: 10px;
-        font-size: 1.2em;
+        font-size: 2em;
         font-weight: 700;
         color: black;
         float: left;
@@ -186,15 +275,12 @@ footer a {
     }
     .intro img {
       float: right;
-      display: inline-block;
       margin: 0;
+      width: auto;
+      height: auto;
     }
                 /*---portfolio---*/
     .portfolio {
-      width: 100%;
-    }
-    .portfolio img {
-      display: block;
       width: 100%;
     }
   .portfolio ul  {
@@ -208,8 +294,31 @@ footer a {
       display: inline-block;
       vertical-align: top;
     }
-  footer a {
+
+                /*--footer--*/
+    .contact a {
+      border-bottom: hidden;
+      display: inline;
+    }
+    footer {
+      padding: 20px 8px 10px 8px;
+      border-bottom: 2px solid #ddd;
+      background-color: white;
+      overflow: hidden;
+    }
+  .backTop {
       display: none;
+    }
+    .footer {
+      padding: 2%;
+    }
+    footer h4 {
+      font-size: 1.5em;
+      padding: 15px;
+    }
+    footer nav {
+      visibility: visible;
+      border-bottom: hidden;
     }
 
     .clearfix::after {

@@ -11,6 +11,7 @@
   </head>
   <body><!--header nav-->
     <div class="container clearfix" id="top">
+    <div class="navName clearfix" id="home">
     <h1 class="name">Student Name</h1>
     <nav class="topNav">
       <ul>
@@ -20,6 +21,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+  </div>
     <header class="intro"><!--banner-->
       <img src="images/responsive-layout-profile.png" alt="Icon of me." width="367" height="225">
       <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and I'm excited to put all my skills to use!</p>
@@ -40,17 +42,26 @@
   </div>
     <div class="skills">
       <h2 id="skills">Skills</h2>
-      <p>Skills? I'd like one of each! According to <a class="inPara" href="https://www.etymonline.com/word/skill">Etymonline </a> the word was born to describe "power of discernment," from Old Norse skil "distinction, ability to make out, discernment, adjustment," related to skilja (v.) "to separate; discern, understand," from Proto-Germanic *skaljo- "divide, separate" (source also of Swedish skäl "reason," Danish skjel "a separation, boundary, limit," Middle Low German schillen "to differ," Middle Low German, Middle Dutch schele "separation, discrimination;" from PIE root *skel- (1) "to cut." Sense of "ability, cleverness" first recorded early 13c.</p>
+      <p>Skills? Sure! I'll take one of each! According to <a class="inPara" href="https://www.etymonline.com/word/skill">Etymonline </a> the word was born to describe "power of discernment," from Old Norse skil "distinction, ability to make out, discernment, adjustment," related to skilja (v.) "to separate; discern, understand," from Proto-Germanic *skaljo- "divide, separate" (source also of Swedish skäl "reason," Danish skjel "a separation, boundary, limit," Middle Low German schillen "to differ," Middle Low German, Middle Dutch schele "separation, discrimination;" from PIE root *skel- (1) "to cut." Sense of "ability, cleverness" first recorded early 13c.</p>
     </div>
   </main>
   <footer><!--footer-->
     <h2 id="contact">Contact</h2>
     <p class="footerPara">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-    <p>Phone <span class="contact">+1 &lpar;111&rpar; 555-1234</span></p>
-    <p>Email <span class="contact">email@email.com</span></p>
-  <div class ="footer">
+    <p>Phone <span class="contact"><a href="tel:5554441234">+1 &lpar;111&rpar; 555-1234</a></span></p>
+    <p>Email <span class="contact"><a href="mailto:email@email.com">email@email.com</a></span></p>
+  <div class ="footer clearfix">
+    <hr>
     <h4>Student Name</h4>
-    <a href="#top">Back to Top</a>
+    <a href="#top" class="backTop">Back to Top</a>
+    <nav class="bottomNav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </div>
   </footer>
   </body>
