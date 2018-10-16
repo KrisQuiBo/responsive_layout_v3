@@ -14,7 +14,7 @@ body {
   background: #fff8f2;
 }
 .container {
-  width: 90%;
+  width: 95%;
   margin: 10px auto;
 }
 
@@ -168,7 +168,7 @@ footer nav {
     /*---navigationAndHeader---*/
 
   nav {
-    float: right;
+
     font-weight: 600;
     padding: 0;
     border-bottom: 8px solid #f2f7ff;
@@ -186,7 +186,7 @@ footer nav {
     font-size: 1.7em;
     font-weight: 700;
     color: black;
-    float: left;
+
     }
     /*---banner---*/
   .intro {
@@ -199,7 +199,7 @@ footer nav {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 200;
     font-size: 1.2em;
-    width: 40%;
+    width: 48%;
     text-align: left;
     margin-right: 1em;
     }
@@ -210,10 +210,10 @@ footer nav {
     height: auto;
     }
   .portfolio li {
-    width: 40%;
+    width: 48%;
     display: inline-block;
     vertical-align: top;
-    padding: 20px;
+    padding: 5px;
   }
 
       /*--footer--*/
@@ -290,7 +290,7 @@ footer nav {
       display: inline-block;
     }
     .portfolio li {
-      width: 30%;
+      width: 33%;
       padding: 15px;
       display: inline-block;
       vertical-align: top;
